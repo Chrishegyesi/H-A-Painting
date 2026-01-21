@@ -40,17 +40,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Service Areas Section */}
-      <section className="service-areas">
-        <h2 className="areas-title">SERVING</h2>
-        <div className="areas-list">
-          <div className="area-item">SARASOTA</div>
-          <div className="area-divider"></div>
-          <div className="area-item">VENICE</div>
-          <div className="area-divider"></div>
-          <div className="area-item">NORTH PORT</div>
-        </div>
-      </section>
+    
     </div>
   );
 }
