@@ -25,7 +25,12 @@
   bottom: 0;
   background: 
     linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
-    linear-gradient(225deg, rgba(30, 58, 138, 0.1) 0%, transparent 50%);
+    linear-gradient(225deg, rgba(30, 58, 138, 0.1) 0%, transparent 50%),
+    url('/H&APaintinglogo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  opacity: 0.4;
   pointer-events: none;
 }
 
@@ -221,49 +226,6 @@
   font-size: 1rem;
 }
 
-/* Service Areas Section */
-.service-areas {
-  padding: 5rem 2rem;
-  background: #0a0f1e;
-  text-align: center;
-}
-
-.areas-title {
-  font-size: 1rem;
-  color: #dc143c;
-  font-weight: 700;
-  letter-spacing: 8px;
-  margin: 0 0 3rem;
-}
-
-.areas-list {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.area-item {
-  font-size: 2rem;
-  color: #ffffff;
-  font-weight: 900;
-  letter-spacing: 4px;
-  transition: all 0.3s ease;
-}
-
-.area-item:hover {
-  color: #dc143c;
-  transform: scale(1.05);
-}
-
-.area-divider {
-  width: 2px;
-  height: 40px;
-  background: linear-gradient(180deg, transparent 0%, #dc143c 50%, transparent 100%);
-}
 
 /* Animations */
 @keyframes fadeInUp {

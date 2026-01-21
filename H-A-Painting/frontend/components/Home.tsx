@@ -1,6 +1,10 @@
 import React from 'react';
 import '../css/Home.css';
-
+import ContactSection from './SectionComponets/ContactSection';
+import GallerySection from './SectionComponets/GallerySection';
+import ServiceSection from './SectionComponets/ServiceSection';
+import ReviewSection from './SectionComponets/ReviewSection';
+import AboutSection from './SectionComponets/Aboutsection';
 export default function Home() {
   return (
     <div className="home">
@@ -39,8 +43,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-    
+    <ServiceSection />
+      <ContactSection />
+      <GallerySection />
+      <ReviewSection />
+      <AboutSection />
     </div>
   );
 }
