@@ -1,1 +1,368 @@
-.about { padding: 2rem 0; }
+/* About Container */
+.about {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 4rem 2rem 3rem;
+  background: linear-gradient(135deg, #0a0f1e 0%, #1a1f3a 100%);
+  text-align: center;
+  position: relative;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, rgba(220, 20, 60, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.about-logo {
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-logo-image {
+  height: 150px;
+  width: auto;
+  filter: drop-shadow(0 0 30px rgba(220, 20, 60, 0.3));
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 8px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.title-divider {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #dc143c 50%, transparent 100%);
+  margin: 2rem auto 0;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
+}
+
+/* Main Content Section */
+.about-content {
+  padding: 5rem 2rem;
+  background: #ffffff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.lead-paragraph {
+  font-size: 1.8rem;
+  color: #0a0f1e;
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.lead-paragraph::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -20px;
+  font-size: 5rem;
+  color: #dc143c;
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+/* Team Info */
+.team-info {
+  margin-bottom: 5rem;
+}
+
+.team-member {
+  margin-bottom: 4rem;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-left: 4px solid #dc143c;
+  transition: all 0.4s ease;
+}
+
+.team-member:hover {
+  transform: translateX(10px);
+  box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.member-details {
+  max-width: 800px;
+}
+
+.member-name {
+  font-size: 2rem;
+  color: #0a0f1e;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.member-line {
+  width: 80px;
+  height: 2px;
+  background: #dc143c;
+  margin-bottom: 1.5rem;
+}
+
+.member-bio {
+  font-size: 1.1rem;
+  color: #333333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #0a0f1e 0%, #1a1f3a 100%);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.philosophy-title {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin: 0 0 2rem;
+}
+
+.philosophy-divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #dc143c 50%, transparent 100%);
+  margin: 0 auto 2rem;
+}
+
+.philosophy-text {
+  font-size: 1.3rem;
+  color: #b8c5d6;
+  line-height: 1.9;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  border: 2px solid #e8e8e8;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(180deg, #dc143c 0%, #1e3a8a 100%);
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.value-card:hover::before {
+  height: 100%;
+}
+
+.value-card:hover .value-title,
+.value-card:hover .value-description {
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  color: #0a0f1e;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin: 0 0 1rem;
+  transition: color 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.value-description {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+  transition: color 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Team Photos Section */
+.team-photos {
+  padding: 5rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.photos-title {
+  font-size: 2rem;
+  color: #0a0f1e;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin: 0 0 2rem;
+}
+
+.photos-divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #dc143c 50%, transparent 100%);
+  margin: 0 auto 4rem;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.photo-placeholder {
+  position: relative;
+}
+
+.photo-frame {
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #0a0f1e;
+  transition: all 0.4s ease;
+}
+
+.photo-frame:hover {
+  border-color: #dc143c;
+  transform: scale(1.02);
+  box-shadow: 0 10px 40px rgba(220, 20, 60, 0.2);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: rgba(10, 15, 30, 0.95);
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.photos-note {
+  font-size: 0.9rem;
+  color: #666666;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+  
+  .about-logo-image {
+    height: 100px;
+  }
+  
+  .lead-paragraph {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+  
+  .team-member {
+    padding: 2rem 1.5rem;
+  }
+  
+  .member-name {
+    font-size: 1.5rem;
+  }
+  
+  .philosophy-section {
+    padding: 3rem 2rem;
+  }
+  
+  .philosophy-title {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .philosophy-text {
+    font-size: 1.1rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .photos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .photo-frame {
+    height: 350px;
+  }
+}
