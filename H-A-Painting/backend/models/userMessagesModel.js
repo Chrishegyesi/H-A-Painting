@@ -2,10 +2,10 @@
 
 const messages = [];
 
-function addMessage({ name, email, message }) {
+function addMessage({ name, email, address, serviceType, message }) {
   const id = messages.length + 1;
   const createdAt = new Date().toISOString();
-  const record = { id, name, email, message, createdAt };
+  const record = { id, name, email, address, serviceType, message, createdAt };
   messages.push(record);
   return record;
 }

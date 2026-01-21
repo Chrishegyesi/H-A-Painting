@@ -11,5 +11,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["components", "components/main.tsx", "components/vite-env.d.ts"]
+  "include": ["components", "main.tsx", "vite-env.d.ts"]
 }

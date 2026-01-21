@@ -1,20 +1,39 @@
+import '../../css/GallerySection.css';
+
 export default function GallerySection() {
   return (
-    <section className="gallery-section">
-      <div className="gallery-content">
-        <h2 className="gallery-title">GALLERY</h2>
-        <p className="gallery-description">
-          Explore our portfolio of completed painting projects in Sarasota, Venice, and North Port. We take pride in delivering high-quality results that transform spaces.
-        </p>
-        <div className="gallery-grid">
-          <div className="gallery-item">
-            <img src="/gallery1.jpg" alt="Gallery Image 1" />
+    <section className="home-gallery-section">
+      <div className="home-gallery-wrapper">
+        <div className="home-gallery-header">
+          <h2 className="home-gallery-heading">PROJECT GALLERY</h2>
+          <p className="home-gallery-subtext">
+            Explore our portfolio of completed projects showcasing quality craftsmanship.
+          </p>
+        </div>
+        
+        <div className="home-gallery-grid">
+          <div className="home-gallery-card">
+            <div className="home-gallery-number">01</div>
+            <div className="home-gallery-image">
+              <img src="/gallery1.jpg" alt="Interior Painting Project" />
+            </div>
+            <h3 className="home-gallery-title">INTERIOR TRANSFORMATION</h3>
           </div>
-          <div className="gallery-item">
-            <img src="/gallery2.jpg" alt="Gallery Image 2" />
+          
+          <div className="home-gallery-card">
+            <div className="home-gallery-number">02</div>
+            <div className="home-gallery-image">
+              <img src="/gallery2.jpg" alt="Exterior Painting Project" />
+            </div>
+            <h3 className="home-gallery-title">EXTERIOR EXCELLENCE</h3>
           </div>
-          <div className="gallery-item">
-            <img src="/gallery3.jpg" alt="Gallery Image 3" />
+          
+          <div className="home-gallery-card">
+            <div className="home-gallery-number">03</div>
+            <div className="home-gallery-image">
+              <img src="/gallery3.jpg" alt="Cabinet Refinishing Project" />
+            </div>
+            <h3 className="home-gallery-title">CABINET REFINISHING</h3>
           </div>
         </div>
       </div>

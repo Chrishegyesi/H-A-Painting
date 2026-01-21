@@ -96,7 +96,7 @@ export default function About() {
           <div className="photo-placeholder">
             <div className="photo-frame">
               <span className="photo-label">Christopher Hegyesi</span>
-              {/* Replace with actual image: <img src="/path-to-chris-photo.jpg" alt="Christopher Hegyesi" /> */}
+              <img src="/chrispic.jpeg" alt="Christopher Hegyesi" /> 
             </div>
           </div>
         </div>

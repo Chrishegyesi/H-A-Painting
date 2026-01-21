@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const { createMessage, listMessages } = require('../controllers/userMessageController');
+const { sendQuoteRequest } = require('../controllers/emailController');
 
 dotenv.config();
 
@@ -19,6 +20,8 @@ app.get('/health', (req, res) => {
 
 app.get('/messages', listMessages);
 app.post('/messages', createMessage);
+
+app.post('/api/contact', sendQuoteRequest);
 
 app.listen(port, () => {
   console.log(`Backend running at http://localhost:${port}`);

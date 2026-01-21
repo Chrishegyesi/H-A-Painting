@@ -4,7 +4,7 @@ import ContactSection from './SectionComponets/ContactSection';
 import GallerySection from './SectionComponets/GallerySection';
 import ServiceSection from './SectionComponets/ServiceSection';
 import ReviewSection from './SectionComponets/ReviewSection';
-import AboutSection from './SectionComponets/Aboutsection';
+import AboutSection from './SectionComponets/AboutSection';
 export default function Home() {
   return (
     <div className="home">
