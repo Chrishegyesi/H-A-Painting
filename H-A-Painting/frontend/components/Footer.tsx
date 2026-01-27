@@ -1,61 +1,64 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-grid">
-          {/* Contact Information */}
-          <div className="footer-section">
-            <h3 className="footer-title">CONTACT</h3>
-            <div className="footer-divider"></div>
-            <div className="footer-info">
-              <a href="tel:941-223-6254" className="footer-link">
-                <span className="footer-label">Phone:</span>
-                <span className="footer-value">941-223-6254</span>
-              </a>
-              <a href="mailto:info@hapainting.com" className="footer-link">
-                <span className="footer-label">Email:</span>
-                <span className="footer-value">info@hapainting.com</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Hours */}
-          <div className="footer-section">
-            <h3 className="footer-title">HOURS</h3>
-            <div className="footer-divider"></div>
-            <div className="footer-info">
-              <div className="footer-text">
-                <span className="footer-label">Monday - Friday</span>
-                <span className="footer-value">12 PM - 6 PM</span>
-              </div>
-              <div className="footer-text">
-                <span className="footer-label">Weekend</span>
-                <span className="footer-value">By Appointment</span>
+    <footer className="footer" aria-label="Footer">
+      <div className="footer__inner container">
+        <div className="footer__grid">
+          <div className="footer__col">
+            <div className="footer__brand">
+              <img
+                src="/H&APaintinglogo.png"
+                alt="H&A Painting"
+                className="footer__logo"
+              />
+              <div className="footer__brandText">
+                <h3 className="footer__title">H&A Painting</h3>
+                <p className="footer__muted">Licensed | Insured | LLC</p>
               </div>
             </div>
+            <p className="footer__about">
+              Professional painting services with pride, craftsmanship, and consistency.
+            </p>
           </div>
 
-          {/* Service Areas */}
-          <div className="footer-section">
-            <h3 className="footer-title">SERVICE AREAS</h3>
-            <div className="footer-divider"></div>
-            <div className="footer-info">
-              <div className="footer-locations">
-                <span className="location-item">Sarasota</span>
-                <span className="location-item">Venice</span>
-                <span className="location-item">North Port</span>
+          <div className="footer__col">
+            <h4 className="footer__heading">Services</h4>
+            <nav aria-label="Services quick links">
+              <ul className="footer__links" role="list">
+                <li>
+                  <Link to="/services" className="footer__link">Services</Link>
+                </li>
+                <li>
+                  <Link to="/gallery" className="footer__link">Gallery</Link>
+                </li>
+                <li>
+                  <Link to="/reviews" className="footer__link">Reviews</Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="footer__link">Request Quote</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div className="footer__col">
+            <h4 className="footer__heading">Contact</h4>
+            <div className="footer__stack">
+              <a className="footer__link" href="tel:941-223-6254">941-223-6254</a>
+              <div className="footer__meta">
+                <div className="footer__metaLabel">Service Areas</div>
+                <div className="footer__metaValue">Sarasota · Venice · North Port</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="footer-bottom">
-          <p className="footer-copyright">
-            &copy; {new Date().getFullYear()} H&A Painting. All rights reserved. | Licensed | Insured | LLC
+        <div className="footer__bottom">
+          <p className="footer__copyright">
+            &copy; {new Date().getFullYear()} H&A Painting. All rights reserved.
           </p>
         </div>
       </div>

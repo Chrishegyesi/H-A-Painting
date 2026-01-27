@@ -1,0 +1,89 @@
+
+.reviews {
+	min-height: 100vh;
+}
+
+.reviews-hero {
+	min-height: 44vh;
+	display: flex;
+	align-items: center;
+}
+
+.reviews-hero .hero__content {
+	text-align: center;
+	padding-top: var(--space-8);
+	padding-bottom: var(--space-8);
+}
+
+.review-card__top {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-3);
+	margin-bottom: var(--space-3);
+}
+
+.review-card__name {
+	margin: 0;
+}
+
+.review-card__stars {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+		monospace;
+	letter-spacing: 1px;
+	color: var(--color-primary);
+}
+
+.review-card__text {
+	margin: 0;
+}
+
+.reviews-cta {
+	padding-top: var(--space-8);
+	padding-bottom: var(--space-8);
+}
+
+.reviews-cta__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-6);
+
+	padding: var(--space-6);
+	border-radius: var(--radius-lg);
+	border: 1px solid var(--border-color);
+	background: var(--color-bg-alt);
+	box-shadow: var(--shadow-sm);
+}
+
+/* Ensure review cards feel great on tablet (2-up) */
+@media (min-width: 640px) {
+	.reviews .grid.grid--3 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 960px) {
+	.reviews .grid.grid--3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.reviews-cta__title {
+	margin: 0 0 var(--space-2);
+}
+
+.reviews-cta__text {
+	margin: 0;
+}
+
+@media (max-width: 800px) {
+	.reviews-cta__inner {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.reviews-cta__inner .btn {
+		width: 100%;
+	}
+}

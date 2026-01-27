@@ -1,0 +1,66 @@
+
+.services {
+	min-height: 100vh;
+}
+
+.services-hero {
+	min-height: 44vh;
+	display: flex;
+	align-items: center;
+}
+
+.services-hero .hero__content {
+	text-align: center;
+	padding-top: var(--space-8);
+	padding-bottom: var(--space-8);
+}
+
+.services-cta {
+	padding-top: var(--space-8);
+	padding-bottom: var(--space-8);
+}
+
+.services-cta__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-6);
+
+	padding: var(--space-6);
+	border-radius: var(--radius-lg);
+	border: 1px solid var(--border-color);
+	background: var(--color-bg-alt);
+	box-shadow: var(--shadow-sm);
+}
+
+/* Ensure 3-card grids feel great on tablet (2-up) */
+@media (min-width: 640px) {
+	.services .grid.grid--3 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 960px) {
+	.services .grid.grid--3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.services-cta__title {
+	margin: 0 0 var(--space-2);
+}
+
+.services-cta__text {
+	margin: 0;
+}
+
+@media (max-width: 800px) {
+	.services-cta__inner {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.services-cta__inner .btn {
+		width: 100%;
+	}
+}
